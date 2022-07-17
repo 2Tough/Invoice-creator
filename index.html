@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Invoice creator</h1>
+            <p>Thank your for using our services</p>
+        </header>
+        <main>
+        <section id="allButtons">
+            <!--This includes all buttons-->
+            <!--Wash car button = washBtn 
+                Mow lawn button = mowBtn
+                Pull weeds button = pullBtn-->
+                <button id="washBtn">Car wash $10</button>
+                <button id="mowBtn">Mow lawn $20</button>
+                <button id="pullBtn">Pull weeds $30</button>
+        </section>
+        <section id="allServices">
+            <p class="left-side">Task</p>
+            <p class="right-side">Total</p>
+            <div id="servicesContainer">
+                <!--This includes the services and their costs, 
+                as well as the remove button-->
+            </div>
+            <div id="costsContainer">
+            </div>
+        </section>
+        <hr/>
+        <section id="allTotals">
+            <!--This sections includes the description on the left
+            and the total on the right.-->
+            <p class="left-side">Description</p>
+            <p class="right-side" id="totalCash">TOTAL AMOUNT</p>
+            <button id="invoice" onclick="sendInvoice()">✉ Send Invoice</button>
+        </section>
+        </main>
+        <script src="index.js"></script>
+    </body>
+</html>
